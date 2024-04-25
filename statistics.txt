@@ -1,0 +1,27 @@
+-----------------------------------
+Game date: ('2024-04-21', '18:19:08')
+Total infected time: 833100 ms
+Average infection time: 16662.0 ms
+30% infected at: 345492 ms
+50% infected at: 422869 ms
+70% infected at: 514593 ms
+Peak incubating: 16
+Peak infected: 50
+-----------------------------------
+Game date: ('2024-04-21', '20:44:27')
+Total infected time: 1071520 ms
+Average infection time: 21430.4 ms
+30% infected at: 281393 ms
+50% infected at: 428240 ms
+70% infected at: 477585 ms
+Peak incubating: 13
+Peak infected: 50
+-----------------------------------
+Game date: ('2024-04-22', '10:38:49')
+Total infected time: 820972 ms
+Average infection time: 16419.44 ms
+30% infected at: 308533 ms
+50% infected at: 364938 ms
+70% infected at: 425326 ms
+Peak incubating: 21
+Peak infected: 50
