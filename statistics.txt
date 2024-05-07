@@ -25,3 +25,12 @@ Average infection time: 16419.44 ms
 70% infected at: 425326 ms
 Peak incubating: 21
 Peak infected: 50
+-----------------------------------
+Game date: ('2024-04-25', '18:28:05')
+Total infected time: 335169 ms
+Average infection time: 6703.38 ms
+30% infected at: 112784 ms
+50% infected at: 142311 ms
+70% infected at: 182256 ms
+Peak incubating: 32
+Peak infected: 50
