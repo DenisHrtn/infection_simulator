@@ -39,7 +39,7 @@ class Statistics:
         self.speed = PERSON_SPEED
         self.sum_of_population = SUM_OF_POPULATION
 
-    def start_time(self):
+    def start_time(self) -> None:
         """
         Return the start time of the statistics calculation.
         """
@@ -54,7 +54,7 @@ class Statistics:
         current_time = self.game_date.strftime('%H:%M:%S')
         return current_date, current_time
 
-    def update_statistics(self, population: Population):
+    def update_statistics(self, population: Population) -> None:
         """
         Update the statistics based on a population.
         :param population:
@@ -77,7 +77,7 @@ class Statistics:
         if infected_count > self.peak_infected:
             self.peak_infected = infected_count
 
-    def end_game(self, population: Population):
+    def end_game(self, population: Population) -> None:
         """
         Collect statistics
         :param population:
@@ -90,7 +90,7 @@ class Statistics:
         self.total_infected_time = total_infected_time
         self.avg_infection_time = avg_infection_time
 
-    def save_statistics_into_text_file(self, filename='statistics.txt'):
+    def save_statistics_into_text_file(self, filename='statistics.txt') -> None:
         """
         Save statistics to a text file.
         :param filename:
@@ -108,7 +108,7 @@ class Statistics:
             f.write(f"Peak infected: {self.peak_infected}\n")
 
     @staticmethod
-    def create_table():
+    def create_table() -> None:
         """
         Create a table of statistics.
         """
@@ -133,7 +133,7 @@ class Statistics:
                 """)
 
     @staticmethod
-    def save_statistics_into_database(statistics):
+    def save_statistics_into_database(statistics) -> None:
         """
         Save statistics to a database.
         """

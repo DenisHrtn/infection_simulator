@@ -13,7 +13,7 @@ PERSON_SPEED = 5
 
 
 class Person:
-    def __init__(self, width, height, city):
+    def __init__(self, width: int, height: int, city):
         self.width = width
         self.height = height
         self.size = PERSON_SIZE
@@ -24,7 +24,7 @@ class Person:
         self.incubation_start_time = INCUBATION_START_TIME
         self.speed = PERSON_SPEED
 
-    def spawn_person(self):
+    def spawn_person(self) -> pygame.rect:
         """
         Spawns a person randomly.
         :return: A person object.
@@ -47,7 +47,7 @@ class Person:
 
         return new_rect
 
-    def move(self):
+    def move(self) -> None:
         """
         Moves the person randomly.
         """
@@ -87,7 +87,7 @@ class Person:
                 else:
                     self.health_status = 'healthy'
 
-    def infect(self):
+    def infect(self) -> None:
         """
         Infects the person.
         """
@@ -100,7 +100,7 @@ class Person:
         """
         return self.health_status == 'infected'
 
-    def start_incubation(self):
+    def start_incubation(self) -> None:
         """
         Starts the incubation period.
         """
@@ -114,7 +114,7 @@ class Person:
         """
         return self.health_status == 'incubating'
 
-    def draw(self, screen):
+    def draw(self, screen) -> pygame.rect:
         """
         Draws the person.
         :param screen:

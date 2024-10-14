@@ -3,7 +3,7 @@ import random
 
 class ProbabilityCalculation:
     @staticmethod
-    def infect_probability(distance, health_status):
+    def infect_probability(distance: int, health_status: str) -> bool:
         """
         Calculate infection probability based on distance and health status.
         :param distance: float, distance between people
@@ -23,5 +23,5 @@ class ProbabilityCalculation:
         return base_prob < 0.5
 
     @staticmethod
-    def incubation_probability():
+    def incubation_probability() -> float:
         return random.random() < 0.5

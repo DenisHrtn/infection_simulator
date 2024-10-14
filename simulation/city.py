@@ -9,7 +9,7 @@ WHITE_COLOR = (255, 255, 255, 255)
 
 
 class City:
-    def __init__(self, width, height):
+    def __init__(self, width: int, height: int):
         self.width = width
         self.height = height
         self.houses = [
@@ -140,7 +140,7 @@ class City:
             pygame.Rect(420, 297, 20, 5),
         ]
 
-    def draw(self, screen):
+    def draw(self, screen) -> None:
         """
         Draws the city on the screen.
         :param screen:
